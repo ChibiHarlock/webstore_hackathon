@@ -1,0 +1,14 @@
+.container {
+  border: 2px solid #0f0f0f;
+  background: black;
+}
+ 
+ #twilight {
+  color: #fff;
+  font-weight: 200;
+  font-family: sans-serif;
+}
+#game_of_thrones {
+  color: #fff;
+  font-family: Impact, sans-serif;
+}
