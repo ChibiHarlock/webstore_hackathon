@@ -12,148 +12,134 @@
     <img width="200" height="320" src="http://images.mentalfloss.com/sites/default/files/styles/article_640x430/public/153517340.jpg"><br><span>Book Purgatory</span>
     <nav class="navbar">
       <ul>
-        <li><a href="bookstoreSSJ.html">Books</a></li>
-        <li><a href="musicpage.html">Music</a></li>
+        <li id="book"><a href="#">Books</a></li>
+        <li id="music"><a href="#">Music</a></li>
+        <li id="showAll"><a href="#">Show All Products for Sale</a></li>
       </ul>
     </nav>
   </header>
-  <div class="container">
 
-    <div id="content", class="bookproduct">
+    <div id="content">
       <!--This is the twilight book div-->
-      <div id="twilight" class="Awful">
-        <p>
-          <div id="name">
-             <br />
-          </div>
-          <div id="category">
-            <br />
-          </div>
-          <div id="price">
-            <br />
-          </div>
-          <div id="picture">
-            <br  />
-          </div>
-          <div id="selling points">
-
-          </div>
-          </p>
       </div>
-      <!--This is the GoT book div-->
-      <div id="game_of_thrones" class="fantasy">
-        <p>
-          <div id="name">
-             <br />
-          </div>
-          <div id="category">
-            <br />
-          </div>
-          <div id="price">
-            <br />
-          </div>
-          <div id="picture">
-            <br  />
-          </div>
-          <div id="selling points">
-
-          </div>
-          </p>
-      </div>
-    </div>
-
-    <div id="content", class="music">
-      <!--This is the twilight music div-->
-      <div id="twilight" class="Awful">
-        <p>
-          <div id="name">
-             <br />
-          </div>
-          <div id="category">
-            <br />
-          </div>
-          <div id="price">
-            <br />
-          </div>
-          <div id="picture">
-            <br  />
-          </div>
-          <div id="selling points">
-
-          </div>
-          </p>
-      </div>
-      <!--This is the GoT music div-->
-      <div id="game_of_thrones" class="fantasy">
-        <p>
-          <div id="name">
-             <br />
-          </div>
-          <div id="category">
-            <br />
-          </div>
-          <div id="price">
-            <br />
-          </div>
-          <div id="picture">
-            <br  />
-          </div>
-          <div id="selling points">
-
-          </div>
-          </p>
-      </div>
-    </div>
 
     <div class="footer">
       <p>Hack Reactor Cohort 26 2016 Hackathon</p>
     </div>
 
-  </div>
-
 <!-- calling library for Jquery -->
 <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
 <!-- calling code for Jquery to fill data on div's above -->
 
-
 <!-- javascript objects here -->
 <script>
 
+
   var book1 = {
+    id : "book1",
     name : "Twilight",
     category : "Romance and Mystery",
     price : 15,
-    "picture url" : "http://image.slidesharecdn.com/book-1-twilight-1231022548425199-1/95/book-1-twilight-1-728.jpg",
-    "selling points" : ["Drama", "Action", "Romance", "Suspense"]
+    "picture-url" : "http://image.slidesharecdn.com/book-1-twilight-1231022548425199-1/95/book-1-twilight-1-728.jpg",
+    "selling-points" : ["Drama", "Action", "Romance", "Suspense"]
   };
   var book2 = {
+     id : "book2",
      name : "The World of Ice and Fire: The Untold History of Westeros and the Game of Thrones",
      category : "Fantasy",
      price : 30,
-     "picture url" : "http://d.gr-assets.com/books/1400360220l/17345242.jpg",
-     "selling points" : ["Dragons", "Gods", "Mystery", "Magic", "Travel"]
+     "picture-url" : "http://d.gr-assets.com/books/1400360220l/17345242.jpg",
+     "selling-points" : ["Dragons", "Gods", "Mystery", "Magic", "Travel"]
   };
 
   var album1 = {
+    id : "album1",
     name : "Twilight : Movie Soundtrack",
     category : "Soundtrack",
     price : 18,
-    "picture url" : "https://upload.wikimedia.org/wikipedia/en/b/b4/Game_of_Thrones_(season_2_soundtrack)_cover.jpg",
-    "selling points" : ["Legendary Composer", "Fully orchestrated tracks"]
+    "picture-url" : "https://upload.wikimedia.org/wikipedia/en/b/b4/Game_of_Thrones_(season_2_soundtrack)_cover.jpg",
+    "selling-points" : ["Legendary Composer", "Fully orchestrated tracks"]
   };
 
   var album2 = {
+    id : "album2",
     name: "Game of Thrones: Soundtrack",
     category: "Soundtrack",
     price: 18,
-    "picture url":
+    "picture-url":
     "https://upload.wikimedia.org/wikipedia/en/b/b4/Game_of_Thrones_(season_2_soundtrack)_cover.jpg",
-    "selling points" :["Music from the T.V. Series", "Amazing Tracks"]
+    "selling-points" :["Music from the T.V. Series", "Amazing Tracks"]
 
 
   };
   //Jquery calls going here
+  /*
   $('.bookproduct #twilight #name').text(book1.name);
+  $('.bookproduct #twilight #category').text(book1.category);
+  $('.bookproduct #twilight #price').text(book1.price);
+  $('.bookproduct #twilight #picture').text(book1["picture url"]);
+  $('.bookproduct #twilight #selling_points').text(book1["selling points"]);
+
+  $('.bookproduct #game_of_thrones #name').text(book2.name);
+  $('.bookproduct #game_of_thrones #category').text(book2.category);
+  $('.bookproduct #game_of_thrones #price').text(book2.price);
+  $('.bookproduct #game_of_thrones #picture').text(book2["picture url"]);
+  $('.bookproduct #game_of_thrones #selling_points').text(book2["selling points"]);
+
+  $('.music #twilight #name').text(album1.name);
+  $('.music #twilight #category').text(album1.category);
+  $('.music #twilight #price').text(album1.price);
+  $('.music #twilight #picture').text(album1["picture url"]);
+  $('.music #twilight #selling_points').text(album1["selling points"]);
+
+  $('.music #game_of_thrones #name').text(album2.name);
+  $('.music #game_of_thrones #category').text(album2.category);
+  $('.music #game_of_thrones #price').text(album2.price);
+  $('.music #game_of_thrones #picture').text(album2["picture url"]);
+  $('.music #game_of_thrones #selling_points').text(album2["selling points"]);
+  */
+
+  // function to add page
+  // constructs and appends new HTML elements into it
+  // $('#content').append($('<div id=book1>').html( $('<div class=name>').text(book1.name)));
+  function add_to_page(collection){
+    var result = $('#content').append($('<div id=' + collection['id'] + '>'));
+    for(var key in collection){
+        result += $('#' + collection['id'] + '').append( $('<div id=' + key + '>').text(collection[key]));
+    }
+    return result;
+  };
+  /*1 Div content (type of instument, eg book, album)
+        Div id and class (name of specific book, good or bad)
+          Div all keys in the object (taking the keys for each element in the object, returning a new div for each element displaying the key : value key pts to)
+
+  
+  
+  */
+
+    // JQuery Click events
+    $('.navbar #book').on('click', function(e){
+      $('#content').empty();
+      add_to_page(book1);
+      add_to_page(book2);
+      return false;
+    });
+
+    $('.navbar #music').on('click', function(e){
+      $('#content').empty();
+      add_to_page(album1);
+      add_to_page(album2);
+      return false;
+    });
+
+    $('.navbar #showAll').on('click', function(e){
+      $('#content').empty();
+      add_to_page(book1);
+      add_to_page(book2);
+      add_to_page(album1);
+      add_to_page(album2);
+      return false;
+    });
 </script>
 </body>
 

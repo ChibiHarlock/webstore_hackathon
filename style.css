@@ -2,7 +2,7 @@ body {
   text-align: center;
 }
 
-.container {
+#content {
   border: 2px solid #0f0f0f;
   background: black;
   max-width: 960px;
@@ -65,7 +65,7 @@ span {
   display: inline;
 }
 
-#twilight {
+#content #book1{
   color: #fff;
   font-family: "Caveat Brush", sans-serif;
   font-size: 18px;
@@ -74,10 +74,30 @@ span {
   background-color: #0f0f0f;
   box-shadow: 0px 0px 2px #888888;
 }
-#twilight > #name {
-  color: red;
+#book1 > #name {
+  color: #f88;
 }
-#game_of_thrones {
+#content #album1{
+  color: #fff;
+  font-family: "Caveat Brush", sans-serif;
+  font-size: 18px;
+  margin: 15px 15px;
+  padding: 24px;
+  background-color: #0f0f0f;
+  box-shadow: 0px 0px 2px #888888;
+}
+#album1 > #name {
+  color: #f88;
+}
+#content #book2 {
+  color: #fff;
+  font-family: "Fjalla One", sans-serif;
+  margin: 15px 15px;
+  padding: 24px;
+  background-color: #0f0f0f;
+  box-shadow: 0px 0px 2px #888888;
+}
+#content #album2 {
   color: #fff;
   font-family: "Fjalla One", sans-serif;
   margin: 15px 15px;
@@ -89,8 +109,5 @@ span {
 img {
 width: 30%;
 height: 30%;
-
-}
-
 
 }
