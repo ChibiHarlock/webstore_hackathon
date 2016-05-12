@@ -20,82 +20,88 @@
   <div class="container">
 
     <div id="content", class="bookproduct">
+      <!--This is the twilight book div-->
       <div id="twilight" class="Awful">
         <p>
           <div id="name">
-            Name: Twilight <br />
+             <br />
           </div>
           <div id="category">
-            Category: Romance and Mystery<br />
+            <br />
           </div>
           <div id="price">
-            Price: $15<br />
+            <br />
           </div>
           <div id="picture">
-            picture: <a href="http://image.slidesharecdn.com/book-1-twilight-1231022548425199-1/95/book-1-twilight-1-728.jpg">Cover</a> <br  />
+            <br  />
           </div>
           <div id="selling points">
-            A list of selling points: Drama, Action, Romance, Suspense
-          </div>
 
-        </p>
-        <p>
-          <div id="name">
-            Name: Twilight : Movie Soundtrack<br />
           </div>
-          <div id="category">
-            Category: Soundtrack<br />
-          </div>
-          <div id="price">
-            Price: $20<br />
-          </div>
-          <div id="picture">
-            picture: <a href="https://upload.wikimedia.org/wikipedia/en/c/c7/Twilight_soundtrack.jpg">Cover</a> <br  />
-          </div>
-          <div id="selling points">
-            A list of selling points: Legendary Composer, Fully orchestrated tracks
-          </div>
-
-        </p>
+          </p>
       </div>
-      
+      <!--This is the GoT book div-->
       <div id="game_of_thrones" class="fantasy">
         <p>
           <div id="name">
-            Name: The World of Ice and Fire: The Untold History of Westeros and the Game of Thrones <br />
+             <br />
           </div>
           <div id="category">
-            Category: Fantasy <br />
+            <br />
           </div>
           <div id="price">
-            Price: $30<br />
+            <br />
           </div>
           <div id="picture">
-            picture: <a href="http://d.gr-assets.com/books/1400360220l/17345242.jpg">Cover</a> <br  />
+            <br  />
           </div>
           <div id="selling points">
-            A list of selling points: Dragons, Gods, Mystery, Magic, Travel
-          </div>
 
-        </p>
+          </div>
+          </p>
+      </div>
+    </div>
+
+    <div id="content", class="music">
+      <!--This is the twilight music div-->
+      <div id="twilight" class="Awful">
         <p>
           <div id="name">
-            Name: The Game of Thrones Soundtrack<br />
+             <br />
           </div>
           <div id="category">
-            Category: Soundtrack <br />
+            <br />
           </div>
           <div id="price">
-            Price: $18<br />
+            <br />
           </div>
           <div id="picture">
-            picture: <a href="https://upload.wikimedia.org/wikipedia/en/b/b4/Game_of_Thrones_(season_2_soundtrack)_cover.jpg">Cover</a> <br  />
+            <br  />
           </div>
           <div id="selling points">
-            A list of selling points: Music from the television series, Amazing tracks
-          </div>
 
-        </p>
+          </div>
+          </p>
+      </div>
+      <!--This is the GoT music div-->
+      <div id="game_of_thrones" class="fantasy">
+        <p>
+          <div id="name">
+             <br />
+          </div>
+          <div id="category">
+            <br />
+          </div>
+          <div id="price">
+            <br />
+          </div>
+          <div id="picture">
+            <br  />
+          </div>
+          <div id="selling points">
+
+          </div>
+          </p>
       </div>
     </div>
 
@@ -105,8 +111,14 @@
 
   </div>
 
+<!-- calling library for Jquery -->
+<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+<!-- calling code for Jquery to fill data on div's above -->
+
+
 <!-- javascript objects here -->
 <script>
+
   var book1 = {
     name : "Twilight",
     category : "Romance and Mystery",
@@ -129,6 +141,19 @@
     "picture url" : "https://upload.wikimedia.org/wikipedia/en/b/b4/Game_of_Thrones_(season_2_soundtrack)_cover.jpg",
     "selling points" : ["Legendary Composer", "Fully orchestrated tracks"]
   };
+
+  var album2 = {
+    name: "Game of Thrones: Soundtrack",
+    category: "Soundtrack",
+    price: 18,
+    "picture url":
+    "https://upload.wikimedia.org/wikipedia/en/b/b4/Game_of_Thrones_(season_2_soundtrack)_cover.jpg",
+    "selling points" :["Music from the T.V. Series", "Amazing Tracks"]
+
+
+  };
+  //Jquery calls going here
+  $('.bookproduct #twilight #name').text(book1.name);
 </script>
 </body>
 
