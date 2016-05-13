@@ -1,5 +1,8 @@
-body {
-  text-align: center;
+html body {
+  max-width:  960px;
+  margin: 0px 50px 0px 20%;
+  background-image: url("http://creativefan.com/important/cf/2012/03/grunge-background/diamond-grunge-background.jpg");
+
 }
 
 #content {
@@ -70,8 +73,8 @@ span {
 
 .products{
   color: #fff;
-  font-family: "Caveat Brush", "Fjalla One", sans-serif;
-  font-size: 18px;
+  font-family: "Candal", sans-serif;
+  font-size: 16px;
   margin: 15px 15px;
   padding: 24px;
   background-color: #0f0f0f;
