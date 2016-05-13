@@ -64,46 +64,22 @@ span {
   font-size: 20px;
   display: inline;
 }
+#name {
+  color: #f88;
+}
 
-#content #book1{
+.products{
   color: #fff;
-  font-family: "Caveat Brush", sans-serif;
+  font-family: "Caveat Brush", "Fjalla One", sans-serif;
   font-size: 18px;
   margin: 15px 15px;
   padding: 24px;
   background-color: #0f0f0f;
   box-shadow: 0px 0px 2px #888888;
 }
-#book1 > #name {
-  color: #f88;
-}
-#content #album1{
-  color: #fff;
-  font-family: "Caveat Brush", sans-serif;
-  font-size: 18px;
-  margin: 15px 15px;
-  padding: 24px;
-  background-color: #0f0f0f;
-  box-shadow: 0px 0px 2px #888888;
-}
-#album1 > #name {
-  color: #f88;
-}
-#content #book2 {
-  color: #fff;
-  font-family: "Fjalla One", sans-serif;
-  margin: 15px 15px;
-  padding: 24px;
-  background-color: #0f0f0f;
-  box-shadow: 0px 0px 2px #888888;
-}
-#content #album2 {
-  color: #fff;
-  font-family: "Fjalla One", sans-serif;
-  margin: 15px 15px;
-  padding: 24px;
-  background-color: #0f0f0f;
-  box-shadow: 0px 0px 2px #888888;
+
+.products #id {
+  display: none;
 }
 
 img {
