@@ -11,104 +11,117 @@
   <header class="header">
     <img width="200" height="320" src="http://images.mentalfloss.com/sites/default/files/styles/article_640x430/public/153517340.jpg"><br><span>Book Purgatory</span>
     <nav class="navbar">
-      <ul>
-        <li id="book"><a href="#">Books</a></li>
-        <li id="music"><a href="#">Music</a></li>
-        <li id="showAll"><a href="#">Show All Products for Sale</a></li>
-      </ul>
-    </nav>
-  </header>
+    <form action=myFunction() method=POST>
+     <input id="searchbox" type="search" placeholder="Search for Products">
+     </form>
 
-  <div id="content">
-    <!--This is the twilight book div-->
-  </div>
+      <select class="dropdown">
+        <option>Choose a Product</option>
+        <option id="book" value="book">Books for Sale</option>
+        <option id="music" value="album">Music for Sale</otpion>
+          <option id="showAll" value="showAll">Show All Products for Sale</option>
+        </select>
+      </nav>
+    </header>
 
-  <div class="footer">
-    <p>Hack Reactor Cohort 26 2016 Hackathon</p>
-  </div>
+    <div id="content">
+      <!--This is the twilight book div-->
+    </div>
 
-  <!-- calling library for Jquery -->
-  <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
-  <!-- calling code for Jquery to fill data on div's above -->
+    <div class="footer">
+      <p>Hack Reactor Cohort 26 2016 Hackathon</p>
+    </div>
+    <!-- calling library for Jquery -->
+    <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    <!-- calling code for Jquery to fill data on div's above -->
 
-  <!-- javascript objects here -->
-  <script>
+    <!-- javascript objects here -->
+    <script>
 
-    var products = {
-      books : [
-      {
-        id : "book1",
-        name : "Twilight",
-        category : "Romance and Mystery",
-        price : 15,
-        "picture-url" : "http://image.slidesharecdn.com/book-1-twilight-1231022548425199-1/95/book-1-twilight-1-728.jpg",
-        "selling-points" : ["Drama", "Action", "Romance", "Suspense"]
-      },
-      {
-        id : "book2",
-        name : "The World of Ice and Fire: The Untold History of Westeros and the Game of Thrones",
-        category : "Fantasy",
-        price : 30,
-        "picture-url" : "http://d.gr-assets.com/books/1400360220l/17345242.jpg",
-        "selling-points" : ["Dragons", "Gods", "Mystery", "Magic", "Travel"]
-      },
-      {
-        id : "book3",
-        name : "Lord of the Flies",
-        category : "Dark Fiction",
-        price : 15,
-        "picture-url" : "https://d.gr-assets.com/books/1327869409l/7624.jpg",
-        "selling-points" : ["Classic", "coming-of-age-story", "Survival"]
-      },
-      {
-        id : "book4",
-        name : "The Girl with the Dragon Tattoo",
-        category : "Action and Dark Fiction",
-        price : 24,
-        "picture-url" : "https://d.gr-assets.com/books/1327868566l/2429135.jpg",
-        "selling-points" : ["Controversal", "Thriller", "Martial Arts"]
-      }
-      ],
-      albums : [
-      {
-       id : "album1",
-       name : "Twilight : Movie Soundtrack",
-       category : "Soundtrack",
-       price : 18,
-       "picture-url" : "https://upload.wikimedia.org/wikipedia/en/b/b4/Game_of_Thrones_(season_2_soundtrack)_cover.jpg",
-       "selling-points" : ["Legendary Composer", "Fully orchestrated tracks"]
-     },
-     {
-       id : "album2",
-       name: "Game of Thrones: Soundtrack",
-       category: "Soundtrack",
-       price: 18,
-       "picture-url":
-       "https://upload.wikimedia.org/wikipedia/en/b/b4/Game_of_Thrones_(season_2_soundtrack)_cover.jpg",
-       "selling-points" :["Music from the T.V. Series", "Amazing Tracks"]
-     },
-     {
-       id : "album3",
-       name: "LAST MOON",
-       category: "Project Album",
-       price: 20,
-       "picture-url":
-       "https://upload.wikimedia.org/wikipedia/en/2/26/Gackt_-_Last_Moon.jpg",
-       "selling-points" :["Moon Project", "Unique blend of music", "A story that spans different eras"]
-     },
-     {
-       id : "album4",
-       name: "The White Album",
-       category: "Revolutionary",
-       price: 150,
-       "picture-url":
-       "http://ecx.images-amazon.com/images/I/31pY7BT4%2BXL.jpg",
-       "selling-points" :["Classic", "Sgt Peppers", "The Beatles"]
-     },
-     ]
-   };
+      var products = {
+        books : [
+        {
+          "picture-url" : '<img src= "https://upload.wikimedia.org/wikipedia/en/1/1d/Twilightbook.jpg">',
+          id : "book1",
+          name : "Twilight",
+          category : "Romance and Mystery",
+          price : "$" + 15.00,
+          "selling-points" : ["Drama, ", " Action, ", " Romance, ", " Suspense"]
+        },
+        {
+          "picture-url" : '<img src="http://d.gr-assets.com/books/1400360220l/17345242.jpg">',
+          id : "book2",
+          name : "The World of Ice and Fire: The Untold History of Westeros and the Game of Thrones",
+          category : "Fantasy",
+          price : "$" + 30,
+          "selling-points" : ["Dragons, ", " Gods, ", " Mystery, ", " Magic, ", " Travel"]
+        },
+        {
+          "picture-url" : '<img src="https://d.gr-assets.com/books/1327869409l/7624.jpg">',
+          id : "book3",
+          name : "Lord of the Flies",
+          category : "Dark Fiction",
+          price : "$" + 15,
+          "selling-points" : ["Classic, ", " coming-of-age-story, ", " Survival"]
+        },
+        {
+          "picture-url" : '<img src="https://d.gr-assets.com/books/1327868566l/2429135.jpg">',
+          id : "book4",
+          name : "The Girl with the Dragon Tattoo",
+          category : "Action and Dark Fiction",
+          price : "$" + 24,
+          "selling-points" : ["Controversal, ", " Thriller, ", " Martial Arts"]
+        }
+        ],
+        albums : [
+        {
+          "picture-url" : '<img src="https://upload.wikimedia.org/wikipedia/en/c/c7/Twilight_soundtrack.jpg">',
+         id : "album1",
+         name : "Twilight : Movie Soundtrack",
+         category : "Soundtrack",
+         price : "$" + 18,
+         "selling-points" : ["Legendary Composer, ", " Fully orchestrated tracks"]
+       },
+       {
+        "picture-url":
+         '<img src="https://upload.wikimedia.org/wikipedia/en/b/b4/Game_of_Thrones_(season_2_soundtrack)_cover.jpg">',
+         id : "album2",
+         name: "Game of Thrones: Soundtrack",
+         category: "Soundtrack",
+         price: "$" + 18,
+         "selling-points" :["Music from the T.V. Series, ", " Amazing Tracks"]
+       },
+       {
+        "picture-url":
+         '<img src="https://upload.wikimedia.org/wikipedia/en/2/26/Gackt_-_Last_Moon.jpg">',
+         id : "album3",
+         name: "LAST MOON",
+         category: "Project Album",
+         price: "$" + 20,
+         "selling-points" :["Moon Project, ", " Unique blend of music, ", " A story that spans different eras"]
+       },
+       {
+        "picture-url":
+         '<img src="http://ecx.images-amazon.com/images/I/31pY7BT4%2BXL.jpg">',
+         id : "album4",
+         name: "The White Album",
+         category: "Revolutionary",
+         price: "$" + 150,
+         "selling-points" :["Classic, ", " Sgt Peppers, ", " The Beatles"]
+       },
+       {
+        "picture-url":
+         '<img src="http://redmp3.su/cover/814539-460x460/screwball-comedy.jpg">',
+         id : "album5",
+         name: "Screwball Comedy",
+         category: "Folk Mix",
+         price: "$" + 20,
+         "selling-points" :["Uplifting, ", " Unique Folk inspired music, ", " Survivor Banquet"]
+       }
+       ]
+     };
 
-   
+
 
   // function to add page
   // constructs and appends new HTML elements into it
@@ -116,45 +129,50 @@
   function add_to_page(collection){
     var result = $('#content').append($('<div id=' + collection['id'] + '  class="products">'));
     for(var key in collection){
-      result += $('#' + collection['id'] + '').append( $('<div id=' + key + '>').text(key + " : " + collection[key]));
+      result += $('#' + collection['id'] + '').append( $('<div id=' + key + '>').append(collection[key]));
     }
     return result;
   };
 
-          var each = function(collection, callback){
-            if(Array.isArray(collection)){
-              for(var i = 0; i < collection.length; i++){
-                callback(collection[i]);
-              }
-            }
-            else
-            {
-              for(var key in collection){
-                callback(collection[key], key, collection);
-              }
-            }
-          }
+  var each = function(collection, callback){
+    if(Array.isArray(collection)){
+      for(var i = 0; i < collection.length; i++){
+        callback(collection[i]);
+      }
+    }
+    else
+    {
+      for(var key in collection){
+        callback(collection[key], key, collection);
+      }
+    }
+  }
 
-    // JQuery Click events
-    $('.navbar #book').on('click', function(e){
-      $('#content').empty();
-      each(products.books, add_to_page);
-      return false;
-    });
+    // JQuery dropdown events
 
-    $('.navbar #music').on('click', function(e){
-      $('#content').empty();
-      each(products.albums, add_to_page);
-      return false;
-    });
+    $('select').on('change', function() {
+  //alert( this.value );
+  if(this.value === 'showAll'){
+    $('#content').empty();
+    each(products.books, add_to_page);
+    each(products.albums, add_to_page);
+  }
+  else if(this.value === 'book'){
+    $('#content').empty();
+    each(products.books, add_to_page);
+  }
+  else if(this.value === 'album'){
+    $('#content').empty();
+    each(products.albums, add_to_page);
+  }
+  else{
+    $('#content').empty();
+  }
+  return false;
+});
 
-    $('.navbar #showAll').on('click', function(e){
-      $('#content').empty();
-      each(products.books, add_to_page);
-      each(products.albums, add_to_page);
-      return false;
-    });
-  </script>
+</script>
+
 </body>
 
 
